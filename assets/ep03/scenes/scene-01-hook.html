@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1080px; height: 1080px; background: #0a1628; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
+  .content { text-align: center; position: relative; z-index: 1; }
+  .cursor-line { font-family: 'JetBrains Mono', monospace; font-size: 20px; color: rgba(255,255,255,0.15); margin-bottom: 60px; }
+  .cursor { display: inline-block; width: 12px; height: 24px; background: #f5a623; margin-left: 4px; }
+  .text { font-family: 'Noto Sans Thai', sans-serif; font-size: 48px; font-weight: 300; color: rgba(255,255,255,0.7); line-height: 1.6; }
+  .dots { color: rgba(245,166,35,0.5); }
+</style>
+</head>
+<body>
+  <div class="content">
+    <div class="cursor-line">$<span class="cursor"></span></div>
+    <div class="text">แต่ 8 ชั่วโมงก่อนหน้านั้น<span class="dots">...</span></div>
+  </div>
+</body>
+</html>

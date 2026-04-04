@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1080px; height: 1080px; background: #0a1628; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; font-family: 'Kanit', sans-serif; }
+  .glow { position: absolute; width: 600px; height: 600px; background: radial-gradient(circle, rgba(245,166,35,0.08) 0%, transparent 65%); }
+  .content { position: relative; z-index: 1; text-align: center; padding: 0 100px; }
+  .line1 { font-size: 44px; font-weight: 700; color: #f5a623; line-height: 1.4; margin-bottom: 40px; text-shadow: 0 0 50px rgba(245,166,35,0.2); }
+  .divider { width: 40px; height: 2px; background: rgba(245,166,35,0.3); margin: 0 auto 40px; }
+  .line2 { font-size: 38px; font-weight: 300; color: rgba(255,255,255,0.6); line-height: 1.5; }
+  .highlight { color: #f5a623; font-weight: 700; }
+</style>
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="content">
+    <div class="line1">ผู้นำที่ดี<br>ไม่จำเป็นต้องเก่งที่สุดในห้อง</div>
+    <div class="divider"></div>
+    <div class="line2">แค่ต้องรู้ว่า...<br><span class="highlight">ใครเก่งอะไร</span></div>
+  </div>
+</body>
+</html>

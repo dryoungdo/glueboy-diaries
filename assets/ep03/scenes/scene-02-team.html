@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1080px; height: 1080px; background: #0a1628; display: flex; align-items: center; justify-content: center; overflow: hidden; font-family: 'JetBrains Mono', monospace; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; padding: 60px; width: 100%; }
+  .terminal { background: #0d0d14; border: 1px solid #1a2a3a; border-radius: 8px; padding: 16px; min-height: 160px; }
+  .terminal-header { display: flex; align-items: center; gap: 6px; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #1a2a3a; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; }
+  .dot-r { background: #f85149; }
+  .dot-y { background: #d29922; }
+  .dot-g { background: #3fb950; }
+  .terminal-title { font-size: 11px; color: #484f58; margin-left: 8px; }
+  .terminal-body { font-size: 12px; line-height: 1.8; }
+  .prompt { color: #3fb950; }
+  .cmd { color: #c9d1d9; }
+  .output { color: #484f58; }
+  .t-glue .terminal-body .prompt { color: #a855f7; }
+  .t-forge .terminal-body .prompt { color: #fb923c; }
+  .t-ledger .terminal-body .prompt { color: #4ade80; }
+  .t-wire .terminal-body .prompt { color: #facc15; }
+  .t-chat .terminal-body .prompt { color: #f472b6; }
+  /* Center the last 2 in a row of 3 */
+  .grid-center { grid-column: 1 / -1; display: flex; gap: 16px; justify-content: center; }
+  .grid-center .terminal { width: calc(33.33% - 8px); }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="terminal t-glue">
+      <div class="terminal-header"><span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span><span class="terminal-title">02-glueboy</span></div>
+      <div class="terminal-body">
+        <div><span class="prompt">GLUEBOY $</span> <span class="cmd">delegate</span></div>
+        <div class="output">dispatching to fleet...</div>
+        <div class="output">5 BOYs online</div>
+      </div>
+    </div>
+    <div class="terminal t-forge">
+      <div class="terminal-header"><span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span><span class="terminal-title">03-forgeboy</span></div>
+      <div class="terminal-body">
+        <div><span class="prompt">FORGE $</span> <span class="cmd">build</span></div>
+        <div class="output">compiling page.tsx</div>
+        <div class="output">ready to deploy</div>
+      </div>
+    </div>
+    <div class="terminal t-ledger">
+      <div class="terminal-header"><span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span><span class="terminal-title">04-ledgerboy</span></div>
+      <div class="terminal-body">
+        <div><span class="prompt">LEDGER $</span> <span class="cmd">query</span></div>
+        <div class="output">scanning 301 sheets</div>
+        <div class="output">validating data...</div>
+      </div>
+    </div>
+    <div class="grid-center">
+      <div class="terminal t-wire">
+        <div class="terminal-header"><span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span><span class="terminal-title">05-wireboy</span></div>
+        <div class="terminal-body">
+          <div><span class="prompt">WIRE $</span> <span class="cmd">connect</span></div>
+          <div class="output">LINE webhook active</div>
+          <div class="output">n8n pipeline ready</div>
+        </div>
+      </div>
+      <div class="terminal t-chat">
+        <div class="terminal-header"><span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span><span class="terminal-title">06-chatboy</span></div>
+        <div class="terminal-body">
+          <div><span class="prompt">CHAT $</span> <span class="cmd">listen</span></div>
+          <div class="output">36 LINE groups</div>
+          <div class="output">monitoring...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

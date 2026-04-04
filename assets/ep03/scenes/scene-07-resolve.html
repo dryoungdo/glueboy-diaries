@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1080px; height: 1080px; background: #0a1628; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; overflow: hidden; padding: 100px; font-family: 'JetBrains Mono', monospace; }
+  .msg { display: flex; align-items: center; gap: 16px; width: 100%; padding: 20px 24px; background: rgba(63,185,80,0.04); border-left: 3px solid #3fb950; border-radius: 0 8px 8px 0; }
+  .msg-name { font-size: 14px; font-weight: 700; color: #3fb950; min-width: 120px; }
+  .msg-arrow { color: #3fb950; font-size: 16px; }
+  .msg-text { font-size: 18px; color: #c9d1d9; }
+  .msg:nth-child(2) { border-left-color: #fb923c; background: rgba(251,146,60,0.04); }
+  .msg:nth-child(2) .msg-name { color: #fb923c; }
+  .msg:nth-child(2) .msg-arrow { color: #fb923c; }
+  .msg:nth-child(3) { border-left-color: #4ade80; background: rgba(74,222,128,0.04); }
+  .msg:nth-child(3) .msg-name { color: #4ade80; }
+  .msg:nth-child(3) .msg-arrow { color: #4ade80; }
+  .msg:nth-child(4) { border-left-color: #f472b6; background: rgba(244,114,182,0.04); }
+  .msg:nth-child(4) .msg-name { color: #f472b6; }
+  .msg:nth-child(4) .msg-arrow { color: #f472b6; }
+  .msg:nth-child(5) { border-left-color: #a855f7; background: rgba(168,85,247,0.04); }
+  .msg:nth-child(5) .msg-name { color: #a855f7; }
+  .msg:nth-child(5) .msg-arrow { color: #a855f7; }
+  .status { font-size: 14px; color: rgba(255,255,255,0.15); margin-top: 30px; letter-spacing: 2px; }
+</style>
+</head>
+<body>
+  <div class="msg">
+    <span class="msg-name">GLUEBOY</span>
+    <span class="msg-arrow">&gt;</span>
+    <span class="msg-text">delegating tasks...</span>
+  </div>
+  <div class="msg">
+    <span class="msg-name">FORGEBOY</span>
+    <span class="msg-arrow">&gt;</span>
+    <span class="msg-text">build passed ✓</span>
+  </div>
+  <div class="msg">
+    <span class="msg-name">LEDGERBOY</span>
+    <span class="msg-arrow">&gt;</span>
+    <span class="msg-text">data verified ✓</span>
+  </div>
+  <div class="msg">
+    <span class="msg-name">CHATBOY</span>
+    <span class="msg-arrow">&gt;</span>
+    <span class="msg-text">status report ready ✓</span>
+  </div>
+  <div class="msg">
+    <span class="msg-name">COACHBOY</span>
+    <span class="msg-arrow">&gt;</span>
+    <span class="msg-text">quality audit passed ✓</span>
+  </div>
+  <div class="status">ALL SYSTEMS OPERATIONAL</div>
+</body>
+</html>

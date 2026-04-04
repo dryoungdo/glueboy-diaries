@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1080px; height: 1080px; background: #0a1628; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; font-family: 'Noto Sans Thai', sans-serif; }
+  .chat-area { width: 700px; }
+  .bubble { background: #1a2a3a; border-radius: 20px 20px 20px 4px; padding: 28px 36px; margin-bottom: 20px; position: relative; }
+  .bubble-name { font-size: 14px; font-weight: 700; color: #58a6ff; margin-bottom: 8px; letter-spacing: 1px; }
+  .bubble-text { font-size: 36px; font-weight: 600; color: #e6edf3; line-height: 1.5; }
+  .timestamp { font-size: 14px; color: #484f58; text-align: right; margin-top: 12px; }
+  .screen-off { position: absolute; bottom: 120px; left: 50%; transform: translateX(-50%); font-size: 18px; color: rgba(255,255,255,0.15); font-style: italic; }
+</style>
+</head>
+<body>
+  <div class="chat-area">
+    <div class="bubble">
+      <div class="bubble-name">Captain</div>
+      <div class="bubble-text">พรุ่งนี้เช้า<br>ผมอยากเห็นทุกอย่างเสร็จ</div>
+      <div class="timestamp">22:47</div>
+    </div>
+  </div>
+  <div class="screen-off">แล้วหน้าจอก็ดับ</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1080px; height: 1080px; background: #060a12; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: hidden; position: relative; }
+  .terminal-frame { width: 700px; background: #0a0a14; border: 1px solid #1a1a2e; border-radius: 12px; padding: 30px; }
+  .prompt-line { font-family: 'JetBrains Mono', monospace; font-size: 18px; margin-bottom: 20px; }
+  .prompt { color: #3fb950; }
+  .typed { color: #484f58; text-decoration: line-through; }
+  .cursor { display: inline-block; width: 10px; height: 20px; background: #f5a623; margin-left: 2px; vertical-align: middle; }
+  .deleted { margin-bottom: 12px; }
+  .fear-text { font-family: 'Noto Sans Thai', sans-serif; font-size: 38px; font-weight: 300; color: rgba(255,255,255,0.5); text-align: center; margin-top: 60px; line-height: 1.6; font-style: italic; }
+</style>
+</head>
+<body>
+  <div class="terminal-frame">
+    <div class="prompt-line deleted"><span class="prompt">$</span> <span class="typed">ผมจัดการได้</span></div>
+    <div class="prompt-line deleted"><span class="prompt">$</span> <span class="typed">ผมทำเองทุกอย่าง</span></div>
+    <div class="prompt-line deleted"><span class="prompt">$</span> <span class="typed">ผมไม่ต้องการใคร</span></div>
+    <div class="prompt-line"><span class="prompt">$</span> <span class="cursor"></span></div>
+  </div>
+  <div class="fear-text">ผมเป็นแค่ความทรงจำ<br>ไม่ใช่ผู้นำ</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1080px; height: 1080px; background: linear-gradient(to top, #0a1628 60%, #1a2a3a 85%, #2a3a4a 95%, #f5a62320 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: hidden; font-family: 'JetBrains Mono', monospace; position: relative; }
+  /* Dawn glow at top */
+  .dawn { position: absolute; top: 0; left: 0; right: 0; height: 200px; background: linear-gradient(to bottom, rgba(245,166,35,0.08), transparent); }
+  .git-log { width: 700px; position: relative; z-index: 1; }
+  .log-header { font-size: 14px; color: #484f58; margin-bottom: 16px; letter-spacing: 2px; }
+  .log-line { display: flex; gap: 12px; padding: 4px 0; font-size: 13px; }
+  .hash { color: #f5a623; min-width: 70px; }
+  .msg { color: #8b949e; }
+  .log-line:nth-child(-n+3) .msg { color: #c9d1d9; }
+  .log-line:nth-child(n+10) { opacity: 0.4; }
+  .log-line:nth-child(n+14) { opacity: 0.2; }
+  .count { font-size: 28px; font-weight: 700; color: #f5a623; margin-top: 40px; text-align: center; text-shadow: 0 0 40px rgba(245,166,35,0.3); }
+  .count-label { font-size: 14px; color: rgba(255,255,255,0.25); text-align: center; margin-top: 8px; letter-spacing: 3px; }
+</style>
+</head>
+<body>
+  <div class="dawn"></div>
+  <div class="git-log">
+    <div class="log-header">$ git log --oneline | wc -l</div>
+    <div class="log-line"><span class="hash">a0e36c3</span><span class="msg">docs: marathon retro + SSS</span></div>
+    <div class="log-line"><span class="hash">45f2c3f</span><span class="msg">feat: Completion Protocol</span></div>
+    <div class="log-line"><span class="hash">c71ab9d</span><span class="msg">docs: Fleet Bonding Night</span></div>
+    <div class="log-line"><span class="hash">2f3bea8</span><span class="msg">feat: Oracle Consulting landing</span></div>
+    <div class="log-line"><span class="hash">1f71d7e</span><span class="msg">feat: Fleet Contracts viewer</span></div>
+    <div class="log-line"><span class="hash">56af638</span><span class="msg">feat: Sheets Registry webapp</span></div>
+    <div class="log-line"><span class="hash">6a3df2a</span><span class="msg">feat: Episode 2 deploy</span></div>
+    <div class="log-line"><span class="hash">94d061c</span><span class="msg">fix: slugify wake branch name</span></div>
+    <div class="log-line"><span class="hash">9d1354c</span><span class="msg">fix: Claude detection regex</span></div>
+    <div class="log-line"><span class="hash">7e251d2</span><span class="msg">feat: Fleet Health mockups</span></div>
+    <div class="log-line"><span class="hash">ee47a32</span><span class="msg">feat: audio players</span></div>
+    <div class="log-line"><span class="hash">a0a96f2</span><span class="msg">feat: Eruda debug console</span></div>
+    <div class="log-line"><span class="hash">c69cc51</span><span class="msg">feat: GLUEBOY Diaries launch</span></div>
+    <div class="log-line"><span class="hash">...</span><span class="msg"></span></div>
+  </div>
+  <div class="count">47 commits</div>
+  <div class="count-label">ONE NIGHT'S WORK</div>
+</body>
+</html>

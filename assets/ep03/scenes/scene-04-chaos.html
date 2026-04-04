@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+Thai:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1080px; height: 1080px; background: #0a1628; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; overflow: hidden; padding: 80px; }
+  .panel { width: 100%; background: #12121a; border-radius: 12px; padding: 24px 30px; position: relative; overflow: hidden; }
+  .panel::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; }
+  .panel-red::before { background: #f85149; }
+  .panel-gray::before { background: #484f58; }
+  .panel-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .panel-name { font-family: 'JetBrains Mono', monospace; font-size: 16px; font-weight: 700; }
+  .panel-red .panel-name { color: #f85149; }
+  .panel-gray .panel-name { color: #484f58; }
+  .panel-status { font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 3px 10px; border-radius: 6px; }
+  .status-error { background: rgba(248,81,73,0.12); color: #f85149; }
+  .status-silent { background: rgba(255,255,255,0.04); color: #484f58; }
+  .panel-msg { font-family: 'Noto Sans Thai', sans-serif; font-size: 22px; color: rgba(255,255,255,0.5); line-height: 1.5; }
+  .panel-red .panel-msg { color: rgba(248,81,73,0.7); }
+  .panel-gray .panel-msg { color: rgba(255,255,255,0.2); font-style: italic; }
+</style>
+</head>
+<body>
+  <div class="panel panel-red">
+    <div class="panel-header">
+      <span class="panel-name">FORGEBOY</span>
+      <span class="panel-status status-error">ERROR</span>
+    </div>
+    <div class="panel-msg">build ผิดไฟล์ — deploy ไปแล้ว 400 บรรทัด<br>ใน repo ที่ผิด</div>
+  </div>
+  <div class="panel panel-red">
+    <div class="panel-header">
+      <span class="panel-name">LEDGERBOY</span>
+      <span class="panel-status status-error">ERROR</span>
+    </div>
+    <div class="panel-msg">ใช้ข้อมูลเก่า — ตัวเลขรายได้ผิดไป 3 แสน<br>Captain เกือบเอาไปใช้</div>
+  </div>
+  <div class="panel panel-gray">
+    <div class="panel-header">
+      <span class="panel-name">CHATBOY</span>
+      <span class="panel-status status-silent">SILENT</span>
+    </div>
+    <div class="panel-msg">ไม่มีรายงาน ไม่มีสรุป ไม่มีเสียง<br>เหมือนไม่มีตัวตน</div>
+  </div>
+</body>
+</html>
