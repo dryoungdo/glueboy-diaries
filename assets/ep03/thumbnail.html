@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700;900&family=Noto+Sans+Thai:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1280px; height: 720px;
+    background: #0a1628;
+    font-family: 'Kanit', sans-serif;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .stars {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(1px 1px at 100px 50px, rgba(255,255,255,0.6), transparent),
+      radial-gradient(1.5px 1.5px at 400px 100px, rgba(255,255,255,0.5), transparent),
+      radial-gradient(1px 1px at 700px 80px, rgba(255,255,255,0.4), transparent),
+      radial-gradient(1px 1px at 1000px 120px, rgba(255,255,255,0.6), transparent),
+      radial-gradient(1px 1px at 200px 300px, rgba(255,255,255,0.3), transparent),
+      radial-gradient(1.5px 1.5px at 900px 400px, rgba(255,255,255,0.5), transparent),
+      radial-gradient(1px 1px at 500px 600px, rgba(255,255,255,0.4), transparent),
+      radial-gradient(1px 1px at 1100px 550px, rgba(255,255,255,0.3), transparent);
+  }
+
+  /* Screen glow on left side — monitor light */
+  .screen-glow {
+    position: absolute;
+    left: -50px; top: 50%;
+    transform: translateY(-50%);
+    width: 400px; height: 500px;
+    background: radial-gradient(ellipse, rgba(100,180,255,0.08) 0%, transparent 70%);
+  }
+
+  /* Amber glow on right — warmth */
+  .amber-glow {
+    position: absolute;
+    right: 50px; top: 50%;
+    transform: translateY(-50%);
+    width: 500px; height: 400px;
+    background: radial-gradient(ellipse, rgba(245,166,35,0.1) 0%, transparent 60%);
+  }
+
+  /* Shadow silhouette — working figure */
+  .silhouette {
+    position: absolute;
+    left: 80px; bottom: 0;
+    width: 300px; height: 500px;
+    display: flex; align-items: flex-end; justify-content: center;
+  }
+  .desk {
+    position: absolute; bottom: 60px; left: 40px;
+    width: 240px; height: 3px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 2px;
+  }
+  .monitor {
+    position: absolute; bottom: 63px; left: 80px;
+    width: 100px; height: 70px;
+    border: 2px solid rgba(100,180,255,0.15);
+    border-radius: 4px;
+    background: rgba(100,180,255,0.03);
+  }
+  .monitor-glow {
+    position: absolute; bottom: 63px; left: 80px;
+    width: 100px; height: 70px;
+    box-shadow: 0 0 30px rgba(100,180,255,0.15);
+  }
+  .figure {
+    position: absolute; bottom: 130px; left: 100px;
+    width: 60px; height: 80px;
+    background: rgba(10,22,40,0.95);
+    border-radius: 30px 30px 10px 10px;
+    border: 1px solid rgba(255,255,255,0.03);
+  }
+  .head {
+    position: absolute; bottom: 205px; left: 113px;
+    width: 34px; height: 34px;
+    background: rgba(10,22,40,0.95);
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.03);
+  }
+
+  /* Text content — right side */
+  .content {
+    position: absolute;
+    right: 60px; top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+    z-index: 10;
+  }
+
+  .ep-badge {
+    display: inline-block;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: rgba(245,166,35,0.7);
+    background: rgba(245,166,35,0.08);
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 56px;
+    font-weight: 700;
+    color: #f5a623;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    text-shadow: 0 0 40px rgba(245,166,35,0.3);
+  }
+
+  .subtitle {
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.35);
+    font-style: italic;
+  }
+
+  .brand {
+    position: absolute;
+    top: 30px; right: 40px;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.15);
+    letter-spacing: 5px;
+  }
+</style>
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="screen-glow"></div>
+  <div class="amber-glow"></div>
+
+  <!-- Shadow figure at desk -->
+  <div class="silhouette">
+    <div class="desk"></div>
+    <div class="monitor"></div>
+    <div class="monitor-glow"></div>
+    <div class="figure"></div>
+    <div class="head"></div>
+  </div>
+
+  <div class="brand">GLUEBOY DIARIES</div>
+
+  <div class="content">
+    <div class="ep-badge">EP.03</div>
+    <div class="title">คืนแรกที่เงา<br>ไม่หลับ</div>
+    <div class="subtitle">AI diary - ไดอารี่ของน้อง AI</div>
+  </div>
+</body>
+</html>
